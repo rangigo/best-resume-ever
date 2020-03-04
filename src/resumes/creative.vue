@@ -4,7 +4,7 @@
       <div>
         <div class="headline">
           <span> {{ person.name.first }} {{ person.name.middle }} </span>
-          <span class="uppercase"> {{ person.name.last }} </span>
+          <span> {{ person.name.last }} </span>
         </div>
 
         <p>
@@ -76,19 +76,24 @@
           </span>
         </a>
       </div>
+      <div v-if="person.skills"
+              class="skills-section section">
+              <div class="icon">
+                <i class="material-icons">done_all</i>
+                <span class="section-headline"> {{ lang.skills }} </span>
+              </div>
 
-      <div class="hobbies-container">
-        <!-- <span class="subheadline">Hobbies</span> -->
-        <div class="hobbies-content">
-          <a v-for="(hobby, index) in person.hobbies" :key="index"
-            class="hobby-item"
-            :href="hobby.url">
+              <div class="section-content-grid">
+                <a v-for="(skill, index) in person.skills" :key="index"
+                  class="grid-item"
+                  :href="skill.url">
 
-            <i v-if="hobby.iconClass" :class="hobby.iconClass + ' hobby-item__icon'"></i>
-            <span class="hobby-item__icon-label"> {{ hobby.name }} </span>
-          </a>
-        </div>
-      </div>
+                  <i v-if="skill.iconClass" :class="'lang-icon ' + skill.iconClass"></i>
+
+                  <span v-else class="squarred-grid-item"> {{ skill.name }} </span>
+                </a>
+              </div>
+            </div>
     </div>
 
     <div class="left-column-bg">
@@ -105,7 +110,7 @@
         <div class="section-content">
           <a v-for="(experience, index) in person.experience" :key="index"
             class="section-content__item"
-            :href="experience.website">
+          >
 
             <span class="section-content__header"> {{ experience.position }}</span>
             <span class="section-content__subheader"> {{ experience.company }}</span>
@@ -148,27 +153,7 @@
 
             <span class="section-content__header"> {{ project.name }} </span>
             <span class="section-content__subheader">{{ project.platform }}</span>
-            <span class="section-content__text"> {{ project.description }} </span>
-            <span class="section-content__text--light"> {{ project.url }} </span>
-          </a>
-        </div>
-      </div>
-
-      <div v-if="person.skills"
-        class="skills-section section">
-        <div class="icon">
-          <i class="material-icons">done_all</i>
-          <span class="section-headline"> {{ lang.skills }} </span>
-        </div>
-
-        <div class="section-content-grid">
-          <a v-for="(skill, index) in person.skills" :key="index"
-            class="grid-item"
-            :href="skill.url">
-
-            <i v-if="skill.iconClass" :class="'lang-icon ' + skill.iconClass"></i>
-
-            <span v-else class="squarred-grid-item"> {{ skill.name }} </span>
+            <span class="section-content__text--light" v-for="(desc, index) in project.description" :key="index">- {{ desc }} </span>
           </a>
         </div>
       </div>
@@ -209,7 +194,7 @@ export default Vue.component(name, getVueOptions(name));
 
 <style lang="less" scoped>
 
-@accent-color: #A800FA;
+@accent-color: rgb(35, 163, 196);
 
 .resume {
   display: flex;
@@ -227,7 +212,7 @@ export default Vue.component(name, getVueOptions(name));
   text-align: left;
 
   color: #ffffff;
-  color:rgba(255,255,255,0.59);
+  color:rgba(255,255,255,0.71);
   background-color: @accent-color;
   overflow: hidden;
   display: block;
@@ -429,7 +414,8 @@ a {
 }
 
 .section-content__text--light {
-  color: rgba(0,0,0,0.42);
+  display: block;
+  color: rgba(0,0,0,0.70);
   font-weight: 300;
 }
 
@@ -495,5 +481,24 @@ a {
   display: block;
   margin-bottom: 10px;
 }
+
+.left-column {
+  .section-content-grid {
+    padding-left: 0px;
+  }
+  .icon {
+    .material-icons {
+      color: white;
+    }
+    .section-headline {
+      color: white;
+    }
+  }
+
+  .squarred-grid-item {
+    background-color: #446477;
+  }
+}
+
 
 </style>
