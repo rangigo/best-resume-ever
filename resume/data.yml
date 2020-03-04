@@ -5,9 +5,9 @@ name:
   last: Nguyen
 about: |
   I am a full-stack software developer with hand-on experience in .NET, ASP.NET and C# development.
-  On the frontend side I have been using Angular/React, TypeScript, and SCSS as preprocessor styling tools.
-  I have been exposed to microservices as well as scalable solutions. I have worked both with Agile and Continuous Integration, using JIRA, Confluence, GIT, Bamboo, Octopus and Application Insight. 
-  I have experience in containers, both Docker and Kubernetes.
+  On the frontend side I have been using HTML,CSS/SASS, Angular/React, and TypeScript.
+  In addition, I have been exposed to RabbitMQ/MassTransit as communication tools between microservices. I have worked both with Agile and Continuous Integration, using JIRA, Confluence, GIT, Bamboo, Octopus and Azure Application Insight. 
+  I have experience in container technologies, both Docker and Kubernetes.
 
 position: Software Developer
 
@@ -31,7 +31,7 @@ experience:
 
 education:
 - degree: Bachelor of Engineering
-  timeperiod: 2016 - 2020
+  timeperiod: 2016 - Upcoming graduation 2020
   description: Major in Software Engineering, Metropolia University of Applied Sciences.
 
 # skill level goes 0 to 100
@@ -61,19 +61,19 @@ skills:
 knowledge:
 
 projects:
-- name: Trading UI / Auction System
+- name: Nord Pool Trading UI / Auction System 
   platform: Angular 8/.NET Core
   description: 
     - Resolve existing technical debt by implementing microservices system to enable scalable solution.
     - Participating in the rewrite of the new UI for auction system.
     - Help architecting UI codebase and take part in developing API proxy of the UI to communicate with other microservices.
     - Utilizing containerize technology to limit dependencies on existing VMs, enabling a seamless deployment pipeline
-- name: Member UI, Dayahead Web
+- name: Nord Pool Member UI, Dayahead Web
   platform: AngularJS/.NET Framework
   description: 
     - Maintaining the legacy web-based solution of Nord Pool trading platform.
     - Help my team achieve zero-bug policy through fixing most of the bugs occur in this project, enabling better planning/grooming for backlog items.
-- name: Student Tooling
+- name: Integrify Student Assessment Tool
   platform: React/Node/Express
   description: 
     - Developing Integrify's internal studio assessment tool from front to back. Design/develop authentication flow, landing page.

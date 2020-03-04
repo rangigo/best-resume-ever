@@ -212,7 +212,7 @@ export default Vue.component(name, getVueOptions(name));
   text-align: left;
 
   color: #ffffff;
-  color:rgba(255,255,255,0.71);
+  color:rgba(255,255,255,0.98);
   background-color: @accent-color;
   overflow: hidden;
   display: block;
@@ -496,7 +496,8 @@ a {
   }
 
   .squarred-grid-item {
-    background-color: #446477;
+    background-color: white;
+    color:rgb(35, 163, 196);
   }
 }
 
