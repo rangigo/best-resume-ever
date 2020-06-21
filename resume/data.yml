@@ -4,12 +4,13 @@ name:
   middle: (Thomas)
   last: Nguyen
 about: |
-  I am a full-stack software developer with hand-on experience in .NET, ASP.NET and C# development.
-  On the frontend side I have been using HTML,CSS/SASS, Angular/React, and TypeScript.
-  In addition, I have been exposed to RabbitMQ/MassTransit as communication tools between microservices. I have worked both with Agile and Continuous Integration, using JIRA, Confluence, GIT, Bamboo, Octopus and Azure Application Insight. 
+  I am a full-stack software developer with hand-on experience in JavaScript related stacks and .NET development.
+  On the frontend side I have been using HTML, CSS/SASS, React/Angular, and TypeScript.
+  In addition, I am also familiar with Node.js, C# .NET as server-side languages, and exposed to RabbitMQ/MassTransit as communication tools between microservices.
+  I have worked both with Agile and Continuous Integration/Deployment, using JIRA, Confluence, GIT, Bamboo, Octopus and Azure Portal. 
   I have experience in container technologies, both Docker and Kubernetes.
 
-position: Software Developer
+position: Software Engineer
 
 birth:
   year: 1997
@@ -17,22 +18,31 @@ birth:
 
 experience:
 - company: Nord Pool
-  position: Software Engineering Trainee
+  position: Software Engineer
   timeperiod: January 2019 - Present
-  description: |
-    Take part in maintaining and developing trading platform auction based for electricity market & power exchange. 
-    Experienced with SAFe method as a solution to Scrum at enterprise level.
+  description: 
+    - Maintain and develop trading platform auction based for electricity market & power exchange.
+    - Rewrite auction system's customer-facing application from scratch using Angular 8, TypeScript, RxJS, SCSS, Material Design and .NET Core.
+    - Develop multi-tenant theming API with SCSS, allow dynamic styling for user interfaces based on customers' config.
+    - Improve test coverage for auction system with test automation development in Node.js, Jasmine, Protractor.
+    - Utilize container technology (Docker, Kubernetes) to limit dependencies on existing Virtual Machines, enabling a seamless deployment pipeline
+    - Practice SAFe methodology as a solution to Scrum at enterprise level.
 
 - company: Integrify
   position: Web Developer
   timeperiod: April 2018 - December 2018
-  description: Participating in Integrify's bootcamp and developing company's internal projects.
+  description: 
+    - Participate in Integrify's bootcamp and develop several side-projects in React and Node.js.
+    - Build Integrify's internal Student Assessment Tool from front to back with React, Redux, SCSS, Node.js and Express. Design/develop authentication flow, landing page.
 
 
 education:
 - degree: Bachelor of Engineering
   timeperiod: 2016 - Upcoming graduation 2020
   description: Major in Software Engineering, Metropolia University of Applied Sciences.
+- degree: High School Diploma
+  timeperiod: 2012 - 2015
+  description: Computer Science Specialized Class, VNU-HCM High School for the Gifted.
 
 # skill level goes 0 to 100
 skills:
@@ -40,50 +50,48 @@ skills:
   level: 97
 - name: CSS/SCSS
   level: 90
-- name: Node.js
-  level: 90
 - name: React
   level: 93
 - name: Angular 2+
   level: 60
 - name: TypeScript
   level: 80
+- name: Node.js
+  level: 90
 - name: .NET
   level: 70
 - name: Docker/K8s
   level: 99
 - name: C#
   level: 99
+- name: Azure
+  level: 99
 - name: JIRA
   level: 99
-- name: Scrum/SAFe
+- name: Scrum
   level: 99
 knowledge:
 
 projects:
-- name: Nord Pool Trading UI / Auction System 
-  platform: Angular 8/.NET Core
+- name: Fetch Anime
+  platform: React, TypeScript, SCSS, URQL, GraphQL, Netlify
+  url: https://fetch-anime.netlify.app/
   description: 
-    - Resolve existing technical debt by implementing microservices system to enable scalable solution.
-    - Participating in the rewrite of the new UI for auction system.
-    - Help architecting UI codebase and take part in developing API proxy of the UI to communicate with other microservices.
-    - Utilizing containerize technology to limit dependencies on existing VMs, enabling a seamless deployment pipeline
-- name: Nord Pool Member UI, Dayahead Web
-  platform: AngularJS/.NET Framework
+    - Progressive web application to track information about seasonal animes.
+    - Hobby project where I got to try out new technologies
+- name: Burger Order
+  url: https://rangigo.github.io/burger-app/
+  platform: React, Redux, Redux Saga, CSS Module, Firebase
   description: 
-    - Maintaining the legacy web-based solution of Nord Pool trading platform.
-    - Help my team achieve zero-bug policy through fixing most of the bugs occur in this project, enabling better planning/grooming for backlog items.
-- name: Integrify Student Assessment Tool
-  platform: React/Node/Express
-  description: 
-    - Developing Integrify's internal studio assessment tool from front to back. Design/develop authentication flow, landing page.
+    - Burger Order application with custom Burger Animated CSS
+    - Practice state management pattern in React apps with Redux
 
 hobbies:
 
 contributions:
 
 contact:
-  email: panigo3797@email.com
+  email: panigo3797@gmail.com
   phone: 045 787 57782
   street: 1234 Broadway
   city: Helsinki

@@ -8,10 +8,13 @@
         </div>
 
         <p>
-          <span class="txt-full-white"> {{ person.position }} </span>
+          <span class="txt-full-white">
+            {{ person.position }}
+          </span>
           <br/>
-          <span> {{ person.contact.city }} </span>
+          <span>{{ person.contact.city }} </span>
         </p>
+        
       </div>
 
       <div class="multi-line-txt">
@@ -22,17 +25,17 @@
         {{ person.knowledge }}
       </div>
 
-      <a :href="contactLinks.email">
-        <div class="block-marged txt-full-white">
-          {{ person.contact.email }}
-        </div>
-      </a>
-
-      <div class="block-marged txt-full-white">
-        {{ person.contact.phone }}
-      </div>
 
       <div class="social-container">
+        <a :href="contactLinks.email">
+          <div class="block-marged txt-full-white">
+            <i class="fa fa-envelope contact-icon"></i>{{ person.contact.email }}
+          </div>
+        </a>
+
+        <div class="block-marged txt-full-white">
+            <i class="fa fa-phone contact-icon"></i>{{ person.contact.phone }}
+        </div>
         <a v-if="person.contact.website"
           :href="person.contact.website">
 
@@ -115,7 +118,7 @@
             <span class="section-content__header"> {{ experience.position }}</span>
             <span class="section-content__subheader"> {{ experience.company }}</span>
             <div class="section-content__text"> {{ experience.timeperiod }}</div>
-            <span class="section-content__text--light"> {{ experience.description }}</span>
+            <span class="section-content__text--light" v-for="(desc, index) in experience.description" :key="index">- {{ desc }} </span>
           </a>
         </div>
       </div>
@@ -208,7 +211,7 @@ export default Vue.component(name, getVueOptions(name));
   width: 30%;
   height: 100%;
   padding: 30px;
-  padding-top: 45px;
+  
   text-align: left;
 
   color: #ffffff;
@@ -236,7 +239,6 @@ export default Vue.component(name, getVueOptions(name));
   height: 100%;
   width: 35%;
   padding: 30px;
-  padding-top: 45px;
 
   display: block;
   overflow: hidden;
@@ -415,7 +417,7 @@ a {
 
 .section-content__text--light {
   display: block;
-  color: rgba(0,0,0,0.70);
+  color: rgb(57, 57, 57);
   font-weight: 300;
 }
 
@@ -426,8 +428,12 @@ a {
 }
 
 .section {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.experience-section {
+  margin-top: 0px;
 }
 
 .lang-icon {
