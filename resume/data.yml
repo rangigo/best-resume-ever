@@ -74,7 +74,7 @@ knowledge:
 
 projects:
 - name: Fetch Anime
-  platform: React, TypeScript, SCSS, URQL, GraphQL, Netlify
+  platform: React, TypeScript, SCSS Module, GraphQL, Netlify
   url: https://fetch-anime.netlify.app/
   description: 
     - Progressive web application to track information about seasonal animes.
@@ -91,11 +91,11 @@ hobbies:
 contributions:
 
 contact:
-  email: panigo3797@gmail.com
+  email: phuoc@hey.com
   phone: 045 787 57782
   street: 1234 Broadway
   city: Helsinki
-  website: https://panigo.netlify.com
+  website: https://phuoc.dev/
   github: rangigo
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
 lang: en
